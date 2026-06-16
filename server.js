@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
 
-const authRoutes = require("./routes/auth");
+// const authRoutes = require("./routes/auth");
 const postRoutes = require("./routes/post");
 
 const app = express();
@@ -19,7 +19,7 @@ mongoose.connect(process.env.MONGO_URI)
     console.log(error);
 });
 
-app.use("/api/auth", authRoutes);
+//app.use("/api/auth", authRoutes);
 app.use("/api/posts", postRoutes);
 
 app.listen(5000, () => {
