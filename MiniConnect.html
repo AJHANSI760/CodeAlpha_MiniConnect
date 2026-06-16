@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/frontend/profile.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>MiniConnect</title>
+    <link rel="stylesheet" href="./MiniConnect_files/style.css">
+</head>
+<body>
+
+    <div class="navbar">
+
+        <h2>🚀 MiniConnect</h2>
+
+        <button onclick="logout()" class="logout-btn">
+            Logout
+        </button>
+
+    </div>
+
+    <div class="main-container">
+
+        <div>
+
+            <div class="hero-banner">
+
+                <h1>Welcome to MiniConnect</h1>
+
+                <p>
+                    Share thoughts, connect, and engage with your community.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Create Post</h3>
+
+                <p>Welcome back, Jhansi 👋</p>
+
+                <textarea id="content" placeholder="What&#39;s on your mind today?"></textarea>
+
+                <button onclick="createPost()">
+                    Create Post
+                </button>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <h3 id="postCount" style="color:white;">Total Posts: 3</h3>
+
+            <div id="posts">
+        <div class="post-card">
+
+            <div class="post-header">
+                👤 Jhansi
+            </div>
+
+            <p>hi</p>
+
+            <button onclick="likePost(&#39;6a31327619d488edc6e0542c&#39;)">
+                ❤️ 0
+            </button>
+
+            <br><br>
+
+            <input type="text" id="comment-6a31327619d488edc6e0542c" placeholder="Write a comment...">
+
+            <button onclick="addComment(&#39;6a31327619d488edc6e0542c&#39;)">
+                Comment
+            </button>
+
+            <div class="comments">
+
+                
+
+            </div>
+
+        </div>
+        
+        <div class="post-card">
+
+            <div class="post-header">
+                👤 Jhansi
+            </div>
+
+            <p>My first social media post</p>
+
+            <button onclick="likePost(&#39;6a31252972ee9de418950c0f&#39;)">
+                ❤️ 3
+            </button>
+
+            <br><br>
+
+            <input type="text" id="comment-6a31252972ee9de418950c0f" placeholder="Write a comment...">
+
+            <button onclick="addComment(&#39;6a31252972ee9de418950c0f&#39;)">
+                Comment
+            </button>
+
+            <div class="comments">
+
+                <p>💬 hi</p>
+
+            </div>
+
+        </div>
+        
+        <div class="post-card">
+
+            <div class="post-header">
+                👤 Jhansi
+            </div>
+
+            <p>Hello MiniConnect</p>
+
+            <button onclick="likePost(&#39;6a31246872ee9de418950c0e&#39;)">
+                ❤️ 2
+            </button>
+
+            <br><br>
+
+            <input type="text" id="comment-6a31246872ee9de418950c0e" placeholder="Write a comment...">
+
+            <button onclick="addComment(&#39;6a31246872ee9de418950c0e&#39;)">
+                Comment
+            </button>
+
+            <div class="comments">
+
+                <p>💬 Nice Post</p>
+
+            </div>
+
+        </div>
+        </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        MiniConnect © 2026 | Developed by Jhansi
+    </footer>
+
+    <script src="./MiniConnect_files/script.js"></script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
