@@ -57,7 +57,7 @@ MiniConnect/
 
 ### 1️⃣ Clone the repository
 
-git clone https://github.com/your-username/CodeAlpha_MiniConnect.git
+git clone https://github.com/AJHANSI760/CodeAlpha_MiniConnect.git
 
 
 ---
@@ -85,7 +85,7 @@ node server.js
 
 ### 5️⃣ Open in browser
 
-http://localhost:5000
+http://127.0.0.1:5500/frontend/register.html
 
 
 ---
