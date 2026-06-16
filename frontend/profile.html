@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MiniConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+
+        <h2>🚀 MiniConnect</h2>
+
+        <button onclick="logout()" class="logout-btn">
+            Logout
+        </button>
+
+    </div>
+
+    <div class="main-container">
+
+        <div>
+
+            <div class="hero-banner">
+
+                <h1>Welcome to MiniConnect</h1>
+
+                <p>
+                    Share thoughts, connect, and engage with your community.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Create Post</h3>
+
+                <p>Welcome back, Jhansi 👋</p>
+
+                <textarea
+                    id="content"
+                    placeholder="What's on your mind today?"
+                ></textarea>
+
+                <button onclick="createPost()">
+                    Create Post
+                </button>
+
+            </div>
+
+        </div>
+
+        <div>
+
+            <h3 id="postCount" style="color:white;">
+                Total Posts: 0
+            </h3>
+
+            <div id="posts"></div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        MiniConnect © 2026 | Developed by Jhansi
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
